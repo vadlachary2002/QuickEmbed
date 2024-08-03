@@ -1,0 +1,185 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-bar{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0rem auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-image{
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Close button styling */
+.close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: none;
+    color: #555;
+    font-size: 18px;
+    cursor: pointer;
+    width: 20px;
+    background-color: transparent;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title styling */
+.title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}
+
+/* Input field styling */
+.input-field,
+.output-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-items: start;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.button {
+    padding: 10px 15px;
+    color: #ffffff;
+    width: 100%;
+    background-color: #00a8d3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}
+
+.button:hover {
+    background-color: #207e95;
+}
+
+/* Note section styling */
+.note {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #38cbf11a;
+    border: 1px solid #d0e4ff;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.note strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}
+
+.note p {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}
+
+.note pre {
+    background: #e1e1e1;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    overflow-x: auto;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: -0.00525rem;
+}

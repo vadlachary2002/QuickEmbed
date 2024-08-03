@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "QuickEmbed",
+  "author": "Nagaraju Chary",
+  "description": "QuickEmbed is a Chrome extension that lets you view any webpage directly within an iframe. Just submit a URL to instantly embed and interact with content without leaving the extension.",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "popup/images/logo16.png",
+    "48": "popup/images/logo48.png",
+    "128": "popup/images/logo128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup/index.html", "popup/images/*.png"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-src 'self' http://localhost:8080/;"
+  }
+}
