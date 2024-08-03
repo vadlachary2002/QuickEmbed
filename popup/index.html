@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Extension UI</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<button id="close-button" class="close-button">X</button>
+<div class="nav-bar">
+    <img src="images/logo128.png" class="logo-image" alt="logo">
+    <h1 class="title">QuickEmbed</h1>
+</div>
+<div class="container">
+    <div class="form-group">
+        <label for="input-field">Enter your application URL:</label>
+        <input type="text" id="input-field" class="input-field" placeholder="http://example.com"/>
+    </div>
+    <div class="button-group">
+        <button id="set-input-button" class="button">Set your application url</button>
+    </div>
+    <div class="form-group">
+        <label for="output-field">Your application URL:</label>
+        <input type="text" id="output-field" class="output-field" disabled placeholder="No URL set" />
+    </div>
+    <div class="button-group">
+        <button id="view-application" class="button">View your Application</button>
+    </div>
+    <div class="note">
+        <strong>Note:</strong>
+        <p>Make sure your application includes a close button that sends the following message:</p>
+        <pre>window.parent.postMessage({action: 'closeIframe'}, '*');</pre>
+    </div>
+</div>
+<footer>
+    All rights reserved quickembed, @vadlachary2002
+</footer>
+<script src="popup.js"></script>
+</body>
+</html>
